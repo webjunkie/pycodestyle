@@ -31,6 +31,9 @@ foo(bar=(1 <= 1))
 d[type(None)] = _deepcopy_atomic
 
 # Annotated Function Definitions
+def munge(input: AnyStr, sep: AnyStr=None, limit=1000,
+          extra: Union[str, dict]=None) -> AnyStr:
+    pass
 #: Okay
 def munge(input: AnyStr, sep: AnyStr = None, limit=1000,
           extra: Union[str, dict] = None) -> AnyStr:
